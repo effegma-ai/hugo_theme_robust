@@ -55,6 +55,11 @@
   gtag('config', '{{ .Site.GoogleAnalytics }}');
 </script>
 {{ end }}
+
+{{ if and .Site.Params.googleAdsense (ne (getenv "HUGO_ENV") "DEV") }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.GoogleAdsense }}" crossorigin="anonymous"></script>
+{{ end }}
+
   </head>
   <body>
     <header class="l-header">
