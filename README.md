@@ -6,9 +6,8 @@
   * config.tomlにGoogle Adsense IDを追加することで、Google Adsenseの自動広告機能を使うことができます。
     ```
     ...
-    googleAnalytics = "G-xxxxx"
+    [params]
     googleAdsense = "ca-pub-xxxxxxxxxx" # Optional
-    disqusShortname = "xx-xx-xx"
     ...
     ```
 
