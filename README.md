@@ -1,3 +1,10 @@
+# Hugo Theme Robust
+このテーマは[dim0627/hugo_theme_robust](https://github.com/dim0627/hugo_theme_robust)を[effegma-ai](https://github.com/effegma-ai)がカスタムしたものです。
+
+以下は元のREADME.mdです。
+
+---
+
 This theme is maintained by [Ress](https://github.com/ress997).
 
 # What is this.
