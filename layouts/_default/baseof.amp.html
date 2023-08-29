@@ -12,6 +12,10 @@
     <meta name="amp-google-client-id-api" content="googleanalytics">
     {{ end }}
 
+    {{ if and .Site.Params.googleAdsense (ne (getenv "HUGO_ENV") "DEV") }}
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+    {{ end }}
+
     {{ with .Site.Params.googlefonts }}
     <link href="{{ . }}" rel="stylesheet">
     {{ else }}
@@ -58,6 +62,10 @@
       }
       </script>
       </amp-analytics>
+    {{ end }}
+
+    {{ if and .Site.Params.googleAdsense (ne (getenv "HUGO_ENV") "DEV") }}
+    <amp-auto-ads type="adsense" data-ad-client="{{ .Site.Params.googleAdsense }}"></amp-auto-ads>
     {{ end }}
 
     <header class="l-header">
