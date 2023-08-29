@@ -1,6 +1,17 @@
 # Hugo Theme Robust
 このテーマは[dim0627/hugo_theme_robust](https://github.com/dim0627/hugo_theme_robust)を[effegma-ai](https://github.com/effegma-ai)がカスタムしたものです。
 
+## 追加機能
+* Google Adsenseの自動広告
+  * config.tomlにGoogle Adsense IDを追加することで、Google Adsenseの自動広告機能を使うことができます。
+    ```
+    ...
+    googleAnalytics = "G-xxxxx"
+    googleAdsense = "ca-pub-xxxxxxxxxx" # Optional
+    disqusShortname = "xx-xx-xx"
+    ...
+    ```
+
 以下は元のREADME.mdです。
 
 ---

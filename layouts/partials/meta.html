@@ -12,3 +12,6 @@
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title | safeHTML }}">
 {{ end }}
 
+{{ with .Site.googleAdsense }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.googleAdsense }}" crossorigin="anonymous"></script>
+{{ end }}
