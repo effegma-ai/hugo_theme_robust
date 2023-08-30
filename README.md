@@ -10,6 +10,7 @@
     googleAdsense = "ca-pub-xxxxxxxxxx" # Optional
     ...
     ```
+  * AMPも有効です
 
 以下は元のREADME.mdです。
 
